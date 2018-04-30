@@ -236,10 +236,11 @@ nav a:hover {
 }
 
 .edu {
-    margin-top: 0px;
+    margin-top: -20px;
     font-size: 18px;
     font-family: 'Questrial', serif;
     width: 400px;
+        line-height: 35px;
 }
 
 .contact {
