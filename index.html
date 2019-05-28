@@ -1,113 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>| QuYun |</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Poiret+One|Purple+Purse|Questrial" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Limelight|Poiret+One|Purple+Purse|Questrial"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+    />
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <style>
-        .hide {
-            display: none;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        a,
-        a:link,
-        a:visited {
-            color: #18221e;
-        }
+      .hide {
+        display: none;
+      }
 
+      a {
+        text-decoration: none;
+      }
+
+      a,
+      a:link,
+      a:visited {
+        color: #18221e;
+      }
     </style>
     <script>
-        $(document).ready(function() {
-            $('#b2').click(function() {
-                $('#img').removeClass();
-                $('#img').addClass('k2');
-                $('html, body').animate({
-                    scrollTop: $("#Oulpie").offset().top
-                }, 750);
-                e.preventDefault();
-            });
-            $('#b3').click(function() {
-                $('#img').removeClass();
-                $('#img').addClass('k3');
-                $('html, body').animate({
-                    scrollTop: $("#ColornBob").offset().top
-                }, 750);
-                e.preventDefault();
-            });
-            $("#b1").on("click", function(e) {
-                $('#img').removeClass();
-                $('#img').addClass('k4');
-                $('html, body').animate({
-                    scrollTop: $("#About_Me").offset().top
-                }, 750);
-                e.preventDefault();
-            });
-
-            $("#b4").on("click", function(e) {
-                $('#img').removeClass();
-                $('#img').addClass('k1');
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 750);
-                e.preventDefault();
-            });
+      $(document).ready(function() {
+        $("#b2").click(function() {
+          $("#img").removeClass();
+          $("#img").addClass("k2");
+          $("html, body").animate(
+            {
+              scrollTop: $("#Oulpie").offset().top
+            },
+            750
+          );
+          e.preventDefault();
+        });
+        $("#b3").click(function() {
+          $("#img").removeClass();
+          $("#img").addClass("k3");
+          $("html, body").animate(
+            {
+              scrollTop: $("#ColornBob").offset().top
+            },
+            750
+          );
+          e.preventDefault();
+        });
+        $("#b1").on("click", function(e) {
+          $("#img").removeClass();
+          $("#img").addClass("k4");
+          $("html, body").animate(
+            {
+              scrollTop: $("#About_Me").offset().top
+            },
+            750
+          );
+          e.preventDefault();
         });
 
+        $("#b4").on("click", function(e) {
+          $("#img").removeClass();
+          $("#img").addClass("k1");
+          $("html, body").animate(
+            {
+              scrollTop: 0
+            },
+            750
+          );
+          e.preventDefault();
+        });
+      });
     </script>
-</head>
+  </head>
 
-<body>
-    <div class="top">
-        <nav id="qu">
-            <ul>
-                <li id="b1"><a href="#About_Me">About Me</a></li>
-                <li id="b2"><a href="#Oulpie">Oulpie</a></li>
-                <li id="b3"><a href="#ColornBob">ColornBob</a></li>
-            </ul>
-        </nav>
+  <body>
+    <div class="nav">
+      <nav id="qu">
+        <ul>
+          <li id="b1"><a href="#About_Me">Resume</a></li>
+          <li id="b2"><a href="#Oulpie">Oulpie</a></li>
+          <li id="b3"><a href="#ColornBob">ColornBob</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="myname" id="b4">
-        <span data-title="Q">Q</span>
-        <span data-title="U">U</span><br/>
+      <div><span data-title="Q">Q</span> <span data-title="U">U</span></div>
+
+      <div>
         <span data-title="Y">Y</span>
         <span data-title="U">U</span>
         <span data-title="N">N</span>
+      </div>
     </div>
-    <img id="img" width="90%" src="oao.svg" draggable="false">
+    <img id="img" width="90%" src="oao.svg" draggable="false" />
 
-
+    <div class="blankForNav"></div>
     <div class="hello">
-        <p class="p1">Hello,<br/> My name is Qu Yun.<br/>
-            <img src="image/ququ.JPG" width="25%" style="margin-top:3%"><br/></p>
-
+      <p class="titleBig">
+        Hello,<br />
+        My name is Qu Yun.<br />
+        <img src="image/ququ.JPG" width="25%" style="margin-top:3%" /><br />
+      </p>
     </div>
-    <hr width="900px" id="About_Me">
+    <hr id="About_Me" class="hrWidth" />
     <div class="container">
-        <table align="center">
+      <div class="tableZone">
+        <div class="tableLeft">
+          <div class="center">
+            <p class="titleMedium">Experience</p>
+            <div class="chinese">
+              <p>
+                。元智資傳環控物連網計畫 <br />
+                。論文《基於圖形識別之低成本快速整理紙筆測驗批改方法》<br />
+                。臺師大「英語線上學習平臺建置開發及課程推廣計畫」研發人員<br />
+                。La Vida Tec. 吉樂健康資訊科技有限公司前端實習生
+              </p>
+            </div>
+          </div>
+          <div class="center">
+            <p class="titleMedium">Education</p>
+            <p class="edu">
+              。Yuan Ze University <br />Information Communication <br />
+              。UAL:LCC-Short Course: Game Design<br />
+              。TOEIC 745
+            </p>
+          </div>
+        </div>
+        <div class="tableRight">
+          <div class="center" style="width: 100%">
+            <p class="titleMedium">My Skill</p>
+            <div class="barDiv">
+              <span class="skillSpan">Html5</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class=" bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">CSS3</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class=" bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">Jquery</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">JS</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">React</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">Unity C#</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">PS</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+            <div class="barDiv">
+              <span class="skillSpan">3Ds Max</span>
+              <div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar bar_g"></div>
+                <div class="bar bar_g"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="contact center">
+              <p class="titleMedium">Contact</p>
+              <p class="imgPClass">
+                <a
+                  href="https://www.facebook.com/qu.yunbi"
+                  target="_blank"
+                  class="imgClass"
+                >
+                  <img src="image/fb.png" class="imgSize" /> 曲蕓</a
+                >
+                <a
+                  href="https://github.com/bcyunbi"
+                  target="_blank"
+                  class="imgClass"
+                >
+                  <img src="image/github.png" class="imgSize" /> Quyun</a
+                >
+              </p>
+              <p class="imgClass">
+                <img src="image/mail.png" class="imgSize" /> bcyunbi@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    -->
+    <hr id="Oulpie" class="hrWidth" />
+    <div class="work">
+      <p class="titleBig">Oulpie</p>
+      <p class="chineseTitle">模擬為西式餐廳所做的樣板。</p>
+      <div class="demo">
+        <a
+          href="https://bcyunbi.github.io/Oulpie/ "
+          target="_blank"
+          class="btn-2"
+          >Demo</a
+        >
+      </div>
+      <p class="workInfo">
+        。導覽頁，使用css3作卡牌翻轉效果<br />
+        。Home page引入bootstrap做照片輪播， About me編排設計、Activity hover
+        效果<br />
+        。Press、Activity page、Press page 版面設計製作<br />
+      </p>
+      <img src="image/o1.png" width="60%" />
+    </div>
+
+    <hr class="hrWidth" />
+    <div id="ColornBob" class="ColornBob">
+      <p class="titleBig ">ColornBob</p>
+      <p class="chineseTitle ">互動式顏色編輯器。</p>
+      <div class="demo">
+        <a
+          href="https://bcyunbi.github.io/ColornBoB/"
+          target="_blank"
+          class="btn-2"
+          >Demo</a
+        >
+      </div>
+      <p class="workInfo">
+        。導覽頁引入particles.js做泡泡互動效果，css3動畫<br />
+        。Pickcolor page加載及修改ColorPalette.js、菜單製作<br />
+        。結合數值，並傳至Final page作呈現<br />
+      </p>
+      <img src="image/c1.png" width="60%" />
+    </div>
+  </body>
+</html>
+<!-- <table style="align-content: center">
             <tr>
                 <td>
-                    <p class="p2">Education</p>
+                    <p class="titleMedium">Education</p>
                 </td>
                 <td>
-                    <p class="p2">My Skill</p>
+                    <p class="titleMedium">My Skill</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="edu">Yuan Ze University<br/>Information Communication <br/> UAL:LCC</br>Short Course: Game Design</p>
-                    <p class="p2">Experience</p><br/>
+                    <p class="edu">Yuan Ze University<br />Information Communication <br /> UAL:LCC</br>Short Course: Game Design</p>
+                    <p class="titleMedium">Experience</p><br />
                     <div class="chinese">
                         <p>
-                            。元智資傳環控物連網計畫 <br/>。論文《基於圖形識別之低成本快速整理紙筆測驗批改方法》<br/>。臺師大「英語線上學習平臺建置開發<br/>及課程推廣計畫」研發人員<br/>。TOEIC 745</p>
+                            。元智資傳環控物連網計畫 <br />
+                            。論文《基於圖形識別之低成本快速整理紙筆測驗批改方法》<br />
+                            。臺師大「英語線上學習平臺建置開發及課程推廣計畫」研發人員<br />
+                            。TOEIC 745
+                        </p>
                     </div>
                 </td>
                 <td>
@@ -204,44 +404,4 @@
                     </table>
 
                 </td>
-        </table>
-        <div class="contact">
-            <p class="p2">Contact</p>
-            <p>
-                <a href="https://www.facebook.com/qu.yunbi" target="_blank"><img src="image/fb.png" width="50px"> Quyun</a>
-                <a href="https://github.com/bcyunbi" target="_blank">
-                    <img src="image/github.png" width="50px"> Quyun
-                </a>
-            </p>
-            <p><img src="image/mail.png" width="50px"> bcyunbi@gmail.com</p>
-        </div>
-    </div>
-    <!--    -->
-    <hr width="900px" id="Oulpie">
-    <div>
-        <p class="p1">Oulpie</p>
-        <p class="chinese2">模擬為西式餐廳所做的樣板。
-        </p>
-        <div class="demo"><a href="https://bcyunbi.github.io/Oulpie/ " target="_blank" class="btn-2" style="color:#6b9d67">Demo</a></div>
-        <p class="ch3">。導覽頁，使用css3作卡牌翻轉效果<br/> 。Home page引入bootstrap做照片輪播，
-            <br/> About me編排設計、Activity hover 效果<br/> 。Press、Activity page、Press page 版面設計製作<br/>
-        </p>
-        <img src="image/o1.png" width=60% style="margin-left:20% ">
-
-
-    </div>
-
-    <!--    -->
-    <hr width="900px ">
-    <div id="ColornBob">
-        <p class="p1 ">ColornBob</p>
-        <p class="chinese2 ">互動式顏色編輯器。
-        </p>
-        <div class="demo"><a href="https://bcyunbi.github.io/ColornBoB/" target="_blank" class="btn-2" style="color:#6b9d67">Demo</a></div>
-        <p class="ch3">。導覽頁引入particles.js做泡泡互動效果，css3動畫<br/> 。Pickcolor page加載及修改ColorPalette.js、菜單製作<br/> 。結合數值，並傳至Final page作呈現<br/>
-        </p>
-        <img src="image/c1.png" width=60% style="margin-left:20% ">
-    </div>
-</body>
-
-</html>
+        </table> -->

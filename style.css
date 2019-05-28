@@ -1,326 +1,419 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.31);
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.31);
 }
-
-.top {
-    width: 100%;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+:root {
+  --color-Green: rgba(67, 116, 67, 0.9);
+  --color-White: White;
+  --color-Gary: #484a48;
+  --color-Dark: #555;
+  --textSize18: 3vh;
 }
 
 #img {
-    margin-left: -20%;
-    margin-top: -30%;
-    transform: rotate(20deg);
-    position: fixed;
-    z-index: -1;
+  margin-left: -20%;
+  margin-top: -30%;
+  transform: rotate(20deg);
+  position: fixed;
+  z-index: -1;
 }
-
-
+.blankForNav {
+  width: 100%;
+  height: 11.5vmin;
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  padding: 0;
+  max-height: 11.5vmin;
+}
 /*meun basic*/
 
-nav {
-    margin-top: -16px;
-    justify-content: space-between;
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 11.5vmin;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0px;
-    /*flex*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.nav a {
+  background-color: var(--color-White);
+  text-decoration: none;
+  color: var(--color-Green);
+  display: block;
+  padding: 2vh 4vh;
+  font-family: "Poiret One", cursive;
+  font-size: 2vh;
 }
 
-nav a {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    color: rgba(67, 116, 67, 0.9);
-    display: block;
-    padding: 10px 30px 10px 30px;
-    font-family: 'Poiret One', cursive;
-    font-size: 18px;
-}
-
-nav a:hover {
-    background-color: #555;
-    text-decoration: none;
-    color: white;
+.nav a:hover {
+  background-color: var(--color-Dark);
+  text-decoration: none;
+  color: var(--color-White);
 }
 
 .k1 {
-    animation: trun1 1.2s forwards;
+  animation: trun1 1.2s forwards;
 }
 
 @keyframes trun1 {
-    10% {
-        opacity: 0.01;
-        transform: scale(0.8) translateY(-50%) translateX(40%) rotate(20deg) scaleY(1.6) scaleX(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) translateX(0) rotate(20deg);
-    }
+  10% {
+    opacity: 0.01;
+    transform: scale(0.8) translateY(-50%) translateX(40%) rotate(20deg)
+      scaleY(1.6) scaleX(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0) rotate(20deg);
+  }
 }
-
 
 /*green*/
 
 .k2 {
-    animation: trun2 1s forwards;
+  animation: trun2 1s forwards;
 }
 
 @keyframes trun2 {
-    40% {
-        opacity: 0.05;
-        transform: translateY(-40%) translateX(10%) rotate(-120deg) scale(0.6) scaleX(2);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(0.8) translateY(-50%) translateX(40%) rotate(270deg) scaleY(1.6) scaleX(0.9);
-    }
+  40% {
+    opacity: 0.05;
+    transform: translateY(-40%) translateX(10%) rotate(-120deg) scale(0.6)
+      scaleX(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8) translateY(-20%) translateX(40%) rotate(270deg)
+      scaleY(1.6) scaleX(0.9);
+  }
 }
 
 .k3 {
-    animation: trunR_3 0.8s forwards;
+  animation: trunR_3 0.8s forwards;
 }
 
 @keyframes trunR_3 {
-    10% {
-        opacity: 0.001;
-        transform: translateY(-15%) translateX(62%) rotate(-120deg) scale(0.6) scaleX(2);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(0.8) translateY(55%) translateX(89%) rotate(150deg) scaleY(1.6) scaleX(0.9);
-    }
+  10% {
+    opacity: 0.001;
+    transform: translateY(-15%) translateX(62%) rotate(-120deg) scale(0.6)
+      scaleX(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8) translateY(55%) translateX(89%) rotate(150deg)
+      scaleY(1.6) scaleX(0.9);
+  }
 }
 
 .k4 {
-    animation: trunR_4 0.8s forwards;
+  animation: trunR_4 0.8s forwards;
 }
 
 @keyframes trunR_4 {
-    10% {
-        opacity: 0.001;
-        transform: translateY(30%) translateX(22%) rotate(20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(0.8) translateY(87%) translateX(15%) rotate(110deg);
-    }
+  10% {
+    opacity: 0.001;
+    transform: translateY(30%) translateX(22%) rotate(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8) translateY(87%) translateX(15%) rotate(110deg);
+  }
 }
 
 .hello {
-    margin-top: 10%;
+  margin-top: 10%;
 }
-
 
 /*Name move*/
 
 .myname {
-    z-index: 99;
-    margin-top: 30%;
-    padding: 0;
-    margin-left: 2%;
-    font-family: 'Limelight', cursive;
-    position: fixed;
+  z-index: 99;
+  padding: 0;
+  margin-left: 2%;
+  font-family: "Limelight", cursive;
+  position: fixed;
+  bottom: 0;
 }
 
 .myname span {
-    font-size: 5em;
-    color: rgba(67, 116, 67, 0.9);
-    position: relative;
-    text-shadow: -1px 0 0 rgba(0, 0, 0, .2);
+  font-size: 1.5rem;
+  color: var(--color-Green);
+  position: relative;
+  text-shadow: -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .myname span:before {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    color: #18221e;
-    transition: .5s cubic-bezier(0, 1.88, .83, .67);
-    transform: rotateY(25deg);
-    z-index: 99;
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  color: #18221e;
+  transition: 0.5s cubic-bezier(0, 1.88, 0.83, 0.67);
+  transform: rotateY(25deg);
+  z-index: 99;
 }
 
 .myname span:after {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    color: rgba(0, 0, 0, .1);
-    transition: .5s cubic-bezier(0, 1.88, .83, .67);
-    transform: rotateY(5deg) scale(1.07, 1) skewY(3deg);
-    z-index: 98;
-    opacity: .5;
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  color: rgba(0, 0, 0, 0.1);
+  transition: 0.5s cubic-bezier(0, 1.88, 0.83, 0.67);
+  transform: rotateY(5deg) scale(1.07, 1) skewY(3deg);
+  z-index: 98;
+  opacity: 0.5;
 }
 
 .myname span:hover:before {
-    transform: perspective(1000px) rotateY(-45deg);
+  transform: perspective(1000px) rotateY(-45deg);
 }
 
 .myname span:hover:after {
-    transform: rotateY(0deg) scale(1.11, 1) skewX(6deg);
+  transform: rotateY(0deg) scale(1.11, 1) skewX(6deg);
 }
 
-.p1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Purple Purse', serif;
-    color: #484a48;
+.titleBig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vmin;
+  font-family: "Purple Purse", serif;
+  color: var(--color-Gary);
 }
 
-.p2 {
-    font-size: 40px;
-    font-family: 'Purple Purse', serif;
-    color: rgba(67, 116, 67, 0.9);
+.titleMedium {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vmin;
+  font-family: "Purple Purse", serif;
+  color: var(--color-Green);
 }
-
 
 /*container*/
 
 .container {
-    text-align: center;
-    margin: 0px auto;
-    margin-top: 2%;
-    width: 1100px;
+  /* text-align: center; */
+  margin: 0px auto;
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container table {
-    line-height: 40px;
+  line-height: 40px;
 }
 
 .p3 {
-    margin-top: -30px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Questrial', serif;
-    width: 400px;
+  margin-top: -30px;
+  text-align: center;
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
+  width: 400px;
 }
 
 .container .ability {
-    margin-top: -50px;
-    padding: 50px;
-    text-align: left;
-    font-size: 18px;
-    font-family: 'Questrial', serif;
+  margin-top: 4vh;
+  /* padding: 50px; */
+  text-align: left;
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
 }
 
 .container .ability td {
-    width: 60px;
+  /* width: 60px; */
 }
 
 .bar {
-    background-color: rgba(67, 116, 67, 0.9);
-    width: 15px;
-    height: 15px;
-    margin-top: 5px;
-    display: inline-block;
+  background-color: var(--color-Green);
+  width: 2vmin;
+  height: 2vmin;
+  display: inline-block;
 }
 
 .bar_g {
-    background-color: #b8d4c3;
+  background-color: #b8d4c3;
 }
 
 .edu {
-    margin-top: -20px;
-    font-size: 18px;
-    font-family: 'Questrial', serif;
-    width: 400px;
-        line-height: 35px;
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
+  /* width: 400px; */
+  line-height: 4vh;
+  width: 80%;
 }
 
 .contact {
-    margin: 0px auto;
-    font-size: 18px;
-    font-family: 'Questrial', serif;
-    margin-bottom: 50px;
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
 }
 
 .chinese {
-    margin-top: -80px;
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 18px;
-    text-align: center;
+  font-family: "cwTeXYen", sans-serif;
+  font-size: var(--textSize18);
+  /* text-align: center; */
+  width: 60%;
+  margin: 0;
 }
 
-.chinese2 {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 18px;
-    text-align: center;
+.chineseTitle {
+  font-family: "cwTeXYen", sans-serif;
+  font-size: var(--textSize18);
+  text-align: center;
 }
-
 
 /*Oulpie*/
 
 .demo {
-    width: 80px;
-    font-family: 'Questrial', serif;
-    font-size: 25px;
-    margin-left: 48%;
+  width: 8vh;
+  font-family: "Questrial", serif;
+  font-size: 3vmin;
+  /* margin-left: 48%; */
 }
 
 .btn-2 {
-    letter-spacing: 0;
+  letter-spacing: 0;
+  color: #6b9d67;
 }
 
 .btn-2:hover,
 .btn-2:active {
-    letter-spacing: 5px;
+  letter-spacing: 1vh;
 }
 
 .btn-2:after,
 .btn-2:before {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid #497664;
-    bottom: 0px;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    -webkit-transition: all 280ms ease-in-out;
-    transition: all 280ms ease-in-out;
-    width: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid white;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
 }
 
 .btn-2:hover:after,
 .btn-2:hover:before {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-color: rgba(67, 116, 67, 0.9);
-    -webkit-transition: width 350ms ease-in-out;
-    transition: width 350ms ease-in-out;
-    width: 70%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: var(--color-Green);
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 11vh;
 }
 
 .btn-2:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 70%;
+  bottom: auto;
+  top: 0;
+  width: 11vh;
 }
 
-.ch3 {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 18px;
-    text-align: center;
+.workInfo {
+  width: 60%;
+  font-family: "cwTeXYen", sans-serif;
+  font-size: var(--textSize18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .work {
-    width: 60%;
-    text-align: center;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ColornBob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hrWidth {
+  width: 75%;
+  margin-top: 5%;
+  /* border: 1px solid var(--color-Gary); */
+}
+.tableLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.tableRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.tableZone {
+  display: flex;
+  flex-direction: row;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 50vh;
+}
+.barDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
+  margin-top: 1vh;
+}
+.barToeic {
+  font-size: var(--textSize18);
+  font-family: "Questrial", serif;
+  margin-top: 1vh;
+}
+.skillSpan {
+  width: 50%;
+}
+.imgPClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "cwTeXYen", sans-serif;
+}
+.imgClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgSize {
+  width: 6vmin;
+  height: 6vmin;
+}
+/* Media Query ，也就是當寬度 < 480 px 時將載入下面這段 CSS : */
+@media screen and (max-width: 800px) {
+  .tableZone {
+    flex-direction: column;
+  }
+  .tableRight,
+  .tableLeft {
+    width: 100%;
+  }
 }
