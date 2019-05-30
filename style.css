@@ -50,7 +50,7 @@ body {
   display: block;
   padding: 2vh 4vh;
   font-family: "Poiret One", cursive;
-  font-size: 2vh;
+  font-size: 4vmin;
 }
 
 .nav a:hover {
@@ -441,7 +441,7 @@ body {
     align-items: center;
     margin-bottom: 2vh;
   }
-  .edu {
+  /* .edu {
     width: 100%;
-  }
+  } */
 }
