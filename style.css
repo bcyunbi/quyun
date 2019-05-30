@@ -10,6 +10,7 @@ body {
   --color-Gary: #484a48;
   --color-Dark: #555;
   --textSize18: 3vh;
+  --textSize12: 2vh;
 }
 
 #img {
@@ -252,12 +253,16 @@ body {
   font-family: "Questrial", serif;
   /* width: 400px; */
   line-height: 4vh;
-  width: 80%;
+  width: 60%;
 }
 
 .contact {
   font-size: var(--textSize18);
   font-family: "Questrial", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
 }
 
 .chinese {
@@ -280,7 +285,6 @@ body {
   width: 8vh;
   font-family: "Questrial", serif;
   font-size: 3vmin;
-  /* margin-left: 48%; */
 }
 
 .btn-2 {
@@ -393,27 +397,51 @@ body {
   width: 50%;
 }
 .imgPClass {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: "cwTeXYen", sans-serif;
 }
 .imgClass {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .imgSize {
   width: 6vmin;
   height: 6vmin;
 }
-/* Media Query ，也就是當寬度 < 480 px 時將載入下面這段 CSS : */
+.iframeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-Gary);
+}
+.iframeDiv a {
+  color: var(--color-Gary);
+}
+.attention {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .tableZone {
     flex-direction: column;
   }
   .tableRight,
   .tableLeft {
+    width: 100%;
+  }
+  .attention {
+    font-family: "cwTeXYen", sans-serif;
+    font-size: var(--textSize12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  .edu {
     width: 100%;
   }
 }
