@@ -250,8 +250,7 @@ body {
 
 .edu {
   font-size: var(--textSize18);
-  font-family: "Questrial", serif;
-  /* width: 400px; */
+  font-family: "cwTeXYen", sans-serif;
   line-height: 4vh;
   width: 60%;
 }
