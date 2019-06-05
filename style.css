@@ -440,6 +440,12 @@ body {
     align-items: center;
     margin-bottom: 2vh;
   }
+  .laVida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  }
   /* .edu {
     width: 100%;
   } */
