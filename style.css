@@ -424,6 +424,18 @@ body {
 .attention {
   display: none;
 }
+.laVida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "cwTeXYen", sans-serif;
+  font-size: var(--textSize18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-Gary);
+}
 @media screen and (max-width: 800px) {
   .tableZone {
     flex-direction: column;
@@ -439,12 +451,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2vh;
-  }
-  .laVida{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
   }
   /* .edu {
     width: 100%;
